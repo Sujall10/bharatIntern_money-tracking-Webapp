@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    color: rgb(36, 12, 58);
+    background: linear-gradient(to right, #f68fc2, #4b0082); 
+}
+.bubble {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.217); 
+    border-radius: 90%;
+    animation: float 4.5s infinite; 
+}
+
+.bubble1 {
+    width: 120px;
+    height: 120px;
+    top: 20%;
+    left: 5%;
+}
+
+.bubble2 {
+    width: 80px;
+    height: 80px;
+    top: 40%;
+    left: 70%;
+}
+
+.bubble3 {
+    width: 70px;
+    height: 70px;
+    top: 80%;
+    left: 20%;
+}
+
+.bubble4 {
+    width: 100px;
+    height: 100px;
+    top: 3%;
+    left: 30%;
+}
+
+.bubble5 {
+    width: 90px;
+    height: 90px;
+    top: 80%;
+    left: 90%;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+h1,h2{
+    text-align: center;
+}
+.input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+}
+.input-section label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.input-section input[type="number"], .input-section input[type="date"]{
+    padding: 5px;
+    margin-right: 10px;
+}
+.input-section button{
+    padding: 5px 10px;
+    background-color: rgba(134, 182, 215, 0.98);
+    color:blue;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.input-section button:hover{
+    background-color: blue;
+    color:white;
+
+}
+.expenses-list{
+    margin: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 2px solid #000205;
+    padding: 8px;
+    text-align: left;
+
+}
+th{
+    background-color:rgb(109, 109, 201);
+    color: rgb(12, 1, 1);
+}
+tfoot td{
+    font-weight: bold;
+}
+.delete-btn{
+    padding: 5px 10px;
+    background-color: rgb(238, 9, 9);
+    color:white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
